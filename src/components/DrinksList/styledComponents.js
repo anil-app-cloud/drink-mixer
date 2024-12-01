@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const ListItem = styled.li`
-    border: 0px none;
-    border-radius: 5px;
     list-style: none;
     min-width: 98vw;
-    background-color: white;
+    background-color: transparent;
+    color:${props => props.darkTheme ? 'white':'black' };
     margin: 5px;
     padding: 20px;
     display: flex;
     align-items: center; 
     justify-content: flex-start;
-    border: 1px solid black;
+    border: 1px solid;
+    border-color:${props => props.darkTheme ? 'white' : '#f7d9d3'};
     border-radius: 5px;
 
     @media (max-width: 768px) {
@@ -34,8 +34,10 @@ export const DirnkPic = styled.img`
 `
 export const DrinkDetailsCard = styled.div`
     margin: 5px;
-    background-color: white;
+    color: ${props => props.darkTheme ?  'white':'black'};
+    background-color: ${props => props.darkTheme ? 'black' : 'white'};
     margin-left: 10px;
+    
 `
 
 export const DrinkDescription = styled.p`

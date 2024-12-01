@@ -1,4 +1,5 @@
 import {useContext} from 'react'
+import { Oval } from 'react-loader-spinner'
 import {
   CardDeatilsBg,
   DirnkPic,
@@ -9,18 +10,30 @@ import {
 import SearchbarContext from '../../context/SearchbarContext'
 
 const DrinkItem = () => {
-  const {drinkItem} = useContext(SearchbarContext)
+  const {drinkItem, darkTheme} = useContext(SearchbarContext)
   console.log(drinkItem, 'drink')
+  if (!drinkItem) {
+    return <Oval
+      height={80}
+      width={80}
+      color="blue"
+      ariaLabel="circular-loading"
+      secondaryColor="lightgreen"
+      strokeWidth={2}
+      strokeWidthSecondary={2}
+      
+    />  
+  }
   return (
-    <CardDeatilsBg>
+    <CardDeatilsBg darkTheme={darkTheme}>
       <DirnkPic src={drinkItem.strDrinkThumb} />
-      <DrinkDetailsCard>
+      <DrinkDetailsCard darkTheme={darkTheme}>
         <h1>{drinkItem.strDrink}</h1>
         <p>
           <Strongtext>Type: </Strongtext>
           {drinkItem.strAlcoholic}
         </p>
-        <DrinkDescription>
+        <DrinkDescription darkTheme={darkTheme}>
           <Strongtext>How to drink: </Strongtext>
           {drinkItem.strInstructionsIT}
         </DrinkDescription>

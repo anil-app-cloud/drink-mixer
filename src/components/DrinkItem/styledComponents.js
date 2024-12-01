@@ -5,7 +5,8 @@ export const CardDeatilsBg = styled.div`
     min-height: 100vh;
     list-style: none;
     min-width: 98vw;
-    background-color: white;
+    background-color: ${props => props.darkTheme ? 'black':'white' };
+    color:${props => props.darkTheme ? 'white':'black' };
     padding: 20px;
     display: flex;
     align-items: center; 
@@ -32,7 +33,8 @@ export const DirnkPic = styled.img`
 `
 export const DrinkDetailsCard = styled.div`
     margin: 5px;
-    background-color: white;
+    background-color: ${props => props.darkTheme ? 'black':'white' };
+    color:${props => props.darkTheme ? 'white':'black' };
     min-width: 100vw
     margin-left: 10px;
 `

@@ -12,15 +12,15 @@ import SearchbarContext from '../../context/SearchbarContext'
 
 const DrinksList = props => {
   const {drink} = props
-  const {getDrinkItem, drinkItem} = useContext(SearchbarContext)
+  const {getDrinkItem, darkTheme} = useContext(SearchbarContext)
 
   const setToDrinkDetails = () => {
     getDrinkItem(drink)
   }
   return (
-    <ListItem>
+    <ListItem darktheme={darkTheme}>
       <DirnkPic src={drink.strDrinkThumb} />
-      <DrinkDetailsCard>
+      <DrinkDetailsCard darkTheme={darkTheme}>
         <h1>{drink.strDrink}</h1>
         <p>
           <Strongtext>Type: </Strongtext>

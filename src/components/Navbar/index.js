@@ -7,12 +7,14 @@ import {
   SearchInput,
   SearchInputForm,
   Applogo,
+  ThemeLogo,
+  ThemeButton,
 } from './styledComponents'
 import SearchbarContext from '../../context/SearchbarContext'
-import './index.css'
+
 
 const Navbar = () => {
-  const {getSearchInput} = useContext(SearchbarContext)
+  const {getSearchInput, getDarkTheme, darkTheme} = useContext(SearchbarContext)
   const setInput = e => {
     getSearchInput(e.target.value)
   }
@@ -21,10 +23,15 @@ const Navbar = () => {
     e.preventDefault()
     console.log('form submited')
   }
-
+  const onToggleTheme = () => {
+    getDarkTheme()
+  }
+  console.log(darkTheme, "theme")
   return (
     <MainNavbar>
-      <Link to="/"><Applogo>Drink Mixer</Applogo></Link>
+      <Link to="/">
+        <Applogo>Drink Mixer</Applogo>
+      </Link>
       <SearchInputForm onSubmit={formSubmited}>
         <SearchInput
           type="text"
@@ -32,8 +39,9 @@ const Navbar = () => {
           onChange={setInput}
         />
       </SearchInputForm>
-
+      <ThemeButton onClick={onToggleTheme}><ThemeLogo src={darkTheme ?"https://cdn0.iconfinder.com/data/icons/multimedia-line-30px/30/sun_light_mode_day-512.png":"https://cdn.iconscout.com/icon/premium/png-256-thumb/dark-2734591-2279374.png?f=webp&w=128"} alt="theme"/></ThemeButton>
       <NavItems>
+        
         <Link to="/">
           <LinkItem>Home</LinkItem>
         </Link>

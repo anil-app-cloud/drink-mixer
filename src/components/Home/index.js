@@ -1,10 +1,11 @@
-import {useState, useEffect, useContext} from 'react'
+import { useEffect, useContext} from 'react'
+import { Oval } from 'react-loader-spinner'
 import DrinksList from '../DrinksList'
 import SearchbarContext from '../../context/SearchbarContext'
-import {HomeBg} from './styledComponents'
+import {HomeBg, MainBg} from './styledComponents'
 
 const Home = () => {
-  const {allDrinks, searchInput, setAllDrinksTovalue, getSearchInput} =
+  const {allDrinks, searchInput, setAllDrinksTovalue, getSearchInput, darkTheme} =
     useContext(SearchbarContext)
 
   console.log(searchInput, 'search')
@@ -29,11 +30,27 @@ const Home = () => {
     fetchDrinks()
   }, [searchInput])
   return (
-    <HomeBg>
-      {allDrinks.map(eachOne => (
-        <DrinksList key={eachOne.idDrink} drink={eachOne} />
-      ))}
-    </HomeBg>
+    <MainBg>
+      {!allDrinks || allDrinks.length === 0 ? (
+        <Oval
+          height={80}
+          width={80}
+          color="blue"
+          ariaLabel="circular-loading"
+          secondaryColor="lightgreen"
+          strokeWidth={2}
+          strokeWidthSecondary={2}
+          
+        />
+      ) : (
+        <HomeBg darkTheme={darkTheme}>
+          {allDrinks.map(eachOne => (
+            <DrinksList key={eachOne.idDrink} drink={eachOne} />
+          ))}
+        </HomeBg>
+      )}
+    </MainBg>
+    
   )
 }
 

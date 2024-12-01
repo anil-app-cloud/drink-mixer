@@ -10,6 +10,19 @@ export const SearchbarProvider = ({children}) => {
     return storedDrink ? JSON.parse(storedDrink) : null
   })
 
+  const [darkTheme, setDarkTheme] = useState(() => {
+    const darkThemeFromLocalStroge = localStorage.getItem('darkTheme')
+    return darkThemeFromLocalStroge ? JSON.parse(darkThemeFromLocalStroge): false
+  })
+
+  const getDarkTheme = () => {
+    setDarkTheme(prev => {
+      localStorage.setItem('darkTheme', JSON.stringify(!prev))
+      return !prev
+    })
+    
+  }
+
   const getDrinkItem = value => {
     setDrinkItem(value)
     localStorage.setItem('drinkItem', JSON.stringify(value))
@@ -30,6 +43,8 @@ export const SearchbarProvider = ({children}) => {
         allDrinks,
         getSearchInput,
         setAllDrinksTovalue,
+        getDarkTheme,
+        darkTheme,
         drinkItem,
         getDrinkItem,
       }}

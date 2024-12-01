@@ -58,6 +58,18 @@ export const SearchInput = styled.input`
 
 
 `
+export const ThemeLogo = styled.img`
+  width:30px;
+  height: 30px;
+  background-color: #ada9a8;
+`
+export const ThemeButton = styled.button`
+  border:0px none;
+  background-color: transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+`
 
 export const SearchInputForm = styled.form`
   width: 60%;

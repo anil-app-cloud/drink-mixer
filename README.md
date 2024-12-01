@@ -1,115 +1,70 @@
-Write the objective of the assignment yourself
+# Getting Started with Create React App
 
-### Refer to the image below:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Add UI reference image yourself
+## Available Scripts
 
-<div style="text-align: center;">
-     <!-- <img src="remove this text and add the image URL" alt="ui"> -->
-</div>
-<br/>
+In the project directory, you can run:
 
-### Design Files
+### `npm start`
 
-<details>
-<summary>Add Route Name</summary>
-<br/>
-Add the design files according to the route (if any) and responsiveness
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-<!-- - [Extra Small (Size < 576px) and Small (Size >= 576px)](remove this text and add the image URL here)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](remove this text and add the image URL here) -->
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-</details>
+### `npm test`
 
-### Set Up Instructions
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<details>
-<summary>Click to view</summary>
+### `npm run build`
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-</details>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Assignment Completion Instructions
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+### `npm run eject`
 
-The app must have the following functionalities:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- Add all the functionalities to be achieved(according to the route, if any) yourself
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-</details>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Assignment Completion Checklist
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-<details>
-<summary>Click to view</summary>
+## Learn More
 
-- **Along with the below points, add your checklist specific to the assignment**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Read the instructions given in the assignment carefully and list down the **Assignment Completion Checklist** for the assignment and start working on it
-- The completion Checklist includes the below-mentioned points
-  - I have completed all the functionalities asked in the assignment
-  - I have used only the resources (Frameworks, Design files, APIs, third-party packages) mentioned in the assignment
-  - I have modified the README.md file based on my assignment instructions
-  - I have completed the assignment **ON TIME**
-- **Note:**
-  - Ensure that you have marked all the checklist points in your completion checklist before submitting the assignment
-  </details>
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Quick Tips
+### Code Splitting
 
-<details>
-<summary>Click to view</summary>
-<br>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Add third-party packages list yourself
-</details>
+### Analyzing the Bundle Size
 
-### Important Note
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-<details>
-<summary>Click to view</summary>
-<br/>
+### Making a Progressive Web App
 
-- Add any important note here, like user credentials for authentication.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-</details>
+### Advanced Configuration
 
-### Resources
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-<details>
-<summary>Data Fetch URLs</summary>
-<br/>
+### Deployment
 
-- Add the URLs list to fetch the data yourself
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-</details>
+### `npm run build` fails to minify
 
-<details>
-<summary>Image URLs</summary>
-<br/>
-
-- Add the list of all image URLs needed in the assignment yourself.
-
-</details>
-
-<details>
-<summary>Colors</summary>
-<br/>
-
-Add the text and background colours to be used in the assignment yourself.
-
-<!-- <div style="background-color: #3b82f6; width: 150px; padding: 10px; color: white">Hex: #3b82f6</div> -->
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Add the font-families to be used in the assignment yourself.
-
-</details>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
